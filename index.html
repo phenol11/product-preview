@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@100;200;400&family=Open+Sans:wght@300&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@100;200;400&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@100;400&family=Open+Sans:wght@300&display=swap" rel="stylesheet"> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:  hsl(30, 38%, 92%);
+            padding-top: 100px;
+            padding-left: 300px;
+            padding-right: 300px;
+            /* font-family:  'Montserrat', sans-serif;; */
+        }
+        #bigbox{
+            display: flex;
+            width: 100%;
+        }
+        #image{
+            width: 50%;
+            height: 473px;
+        }
+        #image img{
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            height: 473px;
+        }
+        .text{
+            width: 50%;
+            padding: 25px;
+            background-color: white;
+            height: 473px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .text p{
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+        }
+        .text h1{
+                margin-top: 20px;
+                font-weight: 700;
+                font-family: 'Yeseva One', cursive;
+                margin-bottom: 30px;
+        }
+        .text h4{
+                font-size: 16px;
+                color:rgba(0, 0, 0, 0.5);
+                font-family: 'Montserrat', sans-serif; 
+                margin-bottom: 30px;
+                /* font-size: large; */
+        }
+        .text .num-part{
+                display: flex;
+                margin-top: 5px;
+                margin-bottom: 5px;
+        }
+        .text .num-part h1{
+                color: hsl(158, 36%, 37%);
+                width: 60%;
+                font-family: 'Yeseva One', cursive;;
+        }
+        .text .num-part p{
+                 text-decoration: line-through;
+                 padding-top: 30px;
+        }
+        .text button{
+                width: 100%;
+                background-color: hsl(158, 36%, 37%);
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                border:none;
+        }
+        .text button p{
+                color: white;
+                padding-top: 5px;
+                margin-left: 8px;
+                font-family: 'Montserrat', sans-serif ;
+        }
+        @media(max-width:375px){
+            body{
+                padding: 20px 10px;
+            }
+            #bigbox{
+                display: block;
+                width: 100%
+            }
+            #image img{
+                border-top-left-radius:10px ;
+                border-top-right-radius:10px ;
+                border-bottom-left-radius: 0;
+                width: 100%;
+                height: 248px;
+            }
+            .text{
+                width: 100%;
+                background-color: white;
+                height: auto;
+                margin-top: -5px;
+                padding: 20px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 0;
+            }
+            .text p{
+                font-weight: 700;
+                color: rgba(0, 0, 0, 0.5);
+                font-size: 14px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .text h1{
+                margin-top: 8px;
+                font-weight: 700;
+                font-family: 'Yeseva One', cursive;
+                margin-bottom: 8px;
+            }
+            .text h4{
+                font-size: 14px;
+                color:rgba(0, 0, 0, 0.5);
+                font-family: 'Montserrat', sans-serif; 
+                margin-bottom: 30px;
+            }
+            .text .num-part{
+                display: flex;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .text .num-part h1{
+                color: hsl(158, 36%, 37%);
+                width: 50%;
+                font-family: 'Yeseva One', cursive;;
+            }
+            .text .num-part p{
+                 text-decoration: line-through;
+                 padding-top: 16px;
+            }
+            .text button{
+                width: 100%;
+                background-color: hsl(158, 36%, 37%);
+                display: flex;
+                justify-content: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+                border:none;
+            }
+            .text button p{
+                color: white;
+                padding-top: 5px;
+                margin-left: 8px;
+                font-family: 'Montserrat', sans-serif ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="bigbox">
+         <div id="image">
+            <img src="m.jpg" alt="" id="img1">
+         </div>
+         <div class="text">
+            <p>P E R F U M E</p>
+            <h1>Gabrielle Essence Eau De Parfum</h1>
+            <h4>A floral,solar and voluptuous interpretation composed by Olivier Polge,Perfumer-Creator for the House of CHANEL.</h4>
+            <div class="num-part">
+              <h1>$149.99</h1>
+              <p>$169.99</p>
+            </div>
+            <button><img src="cart.png" alt="" height="25px"> <p>Add to Cart</p></button>
+        </div>
+    </div>
+    <script>
+        let bigBox = document.getElementById('bigbox')
+        let body = document.querySelector('body')
+        let boxImage = document.getElementById('image')
+        let img = document.getElementById('img1')
+        // let screen = 1200
+        if(screen.width >= 1200){
+            bigBox.style.display = 'flex'
+            boxImage.innerHTML = `<img src="d.jpg" >`
+            boxImage.style.width = "50%"
+            img.style.height = "540px"
+            console.log(screen.width)
+        }else{
+            bigBox.style.display = 'block'
+            boxImage.innerHTML = `<img src="m.jpg" >`
+            boxImage.style.width = "100%"
+            boxImage.style.height = "248px"
+            img.style.height = "248px"
+            img.style.width = "100%"
+        }
+    </script>
+</body>
+</html>
